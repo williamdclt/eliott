@@ -60,6 +60,10 @@ body {
   display: none;
 }
 
+.scene__img--anchor-trigger:hover {
+  cursor: pointer;
+}
+
 .scene__img--anchor-trigger:hover ~ .scene__img--anchor {
   display: block;
 }
