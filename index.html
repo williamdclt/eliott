@@ -13,12 +13,33 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+
+    <style>
+      html {
+        --star-top: 24.5%;
+        --star-left: 72%;
+        --star-right: 21%;
+        --star-bottom: 58%;
+      }
+
+
+      .star.scene__img--anchor-container {
+        clip-path: polygon(calc(100% - var(--star-right)) 24.5%, 79% 42%, 72% 42%, 72% 24.5%);
+      }
+
+      .star .scene__img--anchor-trigger {
+        top: var(--star-top);
+        left: var(--star-left);
+        right: var(--star-right);
+        bottom: var(--star-bottom);
+      }
+    </style>
   </head>
 
   <body>
     <div class="scene">
       <img src="./anim1_1_bg.gif" class="scene__img" />
-      <div class="scene__img--anchor-container">
+      <div class="scene__img--anchor-container star">
         <div class="scene__img--anchor-trigger"></div>
         <img src="./anim1_1.gif" class="scene__img--anchor" />
       </div>

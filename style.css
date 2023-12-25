@@ -29,7 +29,7 @@ body {
 .scene {
   position: relative;
   max-height: 80%;
-  width: 80%;
+  width: 50%;
 
   display: flex;
   flex-direction: column;
@@ -45,11 +45,7 @@ body {
 .scene__img--anchor-trigger {
   position: absolute;
   z-index: 9999;
-  top: 24.5%;
-  left: 72%;
-  right: 21%;
-  bottom: 58%;
-  border: red solid 2px;
+  border: var(--debug-border);
 }
 
 .scene__img--anchor-container {
@@ -58,7 +54,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  clip-path: polygon(79% 24.5%, 79% 42%, 72% 42%, 72% 24.5%);
 }
 
 .scene__img--anchor {
