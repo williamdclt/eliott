@@ -1,11 +1,15 @@
 html {
   --debug-border: none;
   /* --debug-border: 2px red solid; */
+  height: 100%;
 }
 
 body {
   margin: 0;
   background-color: black;
+  padding: 1rem;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .scene {
@@ -15,6 +19,7 @@ body {
 
 .scene--img {
   width: 100%;
+  max-height: 100%;
 }
 
 .scene--anchor {
