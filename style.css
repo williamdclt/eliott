@@ -1,0 +1,20 @@
+html {
+  --debug-border: none;
+  /* --debug-border: 2px red solid; */
+}
+
+.scene {
+  width: 100%;
+  position: relative;
+}
+
+.scene--img {
+  width: 100%;
+}
+
+.scene--anchor {
+  border: var(--debug-border);
+  position: absolute;
+  top: 0; /* to be overriden inline */
+  left: 0; /* to be overriden inline */
+}
