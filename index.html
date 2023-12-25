@@ -3,22 +3,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="utf-8">
-      <title>Eliott Duclot</title>
-      <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8">
+    <title>Eliott Duclot</title>
+    <link rel="stylesheet" href="./style.css" />
 
-      <!-- Avoid the browser caching anything, at least while the
-           this is actively being worked on, so that we don't get
-           confusingly outdated pages after deploying an update -->
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
+    <!-- Avoid the browser caching anything, at least while the
+          this is actively being worked on, so that we don't get
+          confusingly outdated pages after deploying an update -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
   </head>
 
   <body>
     <div class="scene">
       <img src="./anim1_1_bg.gif" class="scene__img" />
-      <img src="./anim1_1.gif" class="scene__img--anchor" />
+      <div class="scene__img--anchor-container">
+        <div class="scene__img--anchor-trigger"></div>
+        <img src="./anim1_1.gif" class="scene__img--anchor" />
+      </div>
     </div>
   </body>
 </html>
