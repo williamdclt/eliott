@@ -3,6 +3,11 @@ html {
   /* --debug-border: 2px red solid; */
 }
 
+body {
+  margin: 0;
+  background-color: black;
+}
+
 .scene {
   width: 100%;
   position: relative;
